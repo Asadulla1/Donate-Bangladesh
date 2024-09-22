@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <!-- Daisy Ui + Tailwind CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="sticky top-0">
+      <nav class="bg-[#F9F7F3] p-5 md:p-12">
+        <div class="flex w-full md:w-4/5 mx-auto justify-between items-center">
+          <!-- btn div  -->
+          <div class="hidden md:block">
+            <button class="btn btn-md px-8 bg-[#B4F461]">
+              <a href="./index.html" class="font-bold">Home</a>
+            </button>
+          </div>
+          <!-- logo div  -->
+          <div class="flex items-center">
+            <!-- img container  -->
+            <div class="mx-5">
+              <img src="./assets/logo.png" alt="" />
+            </div>
+            <!-- Slogan  -->
+            <div>
+              <h3 class="text-xl font-bold">Donate Bangladesh</h3>
+            </div>
+          </div>
+          <!-- coin Div  -->
+          <div class="hidden md:flex items-center">
+            <div class="mx-3">
+              <img src="./assets/coin.png" alt="" />
+            </div>
+            <div>
+              <p class="text-xl font-semibold">5500 BDT</p>
+            </div>
+          </div>
+          <!-- Hamburg Div  -->
+          <div class="text-2xl block md:hidden">
+            <i class="fa-solid fa-bars cursor-pointer" id="hamburg-menu"></i>
+          </div>
+        </div>
+        <div id="hamburg-menu-content" class="hidden">
+          <div class="block my-10 text-center">
+            <button class="btn btn-md px-8 bg-[#B4F461]">
+              <a href="./index.html">Home</a>
+            </button>
+          </div>
+          <div class="flex items-center justify-center">
+            <img src="./assets/coin.png" alt="" class="mx-3" />
+            <p class="font-bold">5500 BDT</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="md:w-4/5 mx-auto my-20">
+      <!-- Accordion section  -->
+       <div >
+        <div class="collapse collapse-arrow bg-base-200 my-10">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              1. What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 my-10">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              2. How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 my-10">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              3. What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 my-10">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              4. How do you manipulate an element's attributes and styles using the DOM?
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+       </div>
+    </main>
+    <footer class="h-60 bg-[#F9F7F3]"></footer>
+    <script src="./JS/menu.js"></script>
+    <script
+    src="https://kit.fontawesome.com/125866ef9a.js"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
