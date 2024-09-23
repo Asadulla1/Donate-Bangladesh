@@ -39,7 +39,9 @@
               <img src="./assets/coin.png" alt="" />
             </div>
             <div>
-              <p class="text-xl font-semibold">5500 BDT</p>
+              <p class="text-xl font-semibold">
+                <span id="total-amount-balance">5500 </span>BDT
+              </p>
             </div>
           </div>
           <!-- Hamburg Div  -->
@@ -55,19 +57,31 @@
           </div>
           <div class="flex items-center justify-center">
             <img src="./assets/coin.png" alt="" class="mx-3" />
-            <p class="font-bold">5500 BDT</p>
+            <div>
+              <p class="text-xl font-semibold">
+                <span id="total-amount-balance-hamburg">5500 </span>BDT
+              </p>
+            </div>
           </div>
         </div>
       </nav>
       <div class="btn-div text-center bg-white shadow-md p-10">
-        <button class="btn btn-lg mx-8 font-bold focus:bg-[#B4F461]">
+        <button
+          class="btn btn-lg mx-8 font-bold focus:bg-[#B4F461]"
+          id="donation-section-show"
+        >
           Donation
         </button>
-        <button class="btn btn-lg font-bold focus:bg-[#B4F461]">History</button>
+        <button
+          class="btn btn-lg font-bold focus:bg-[#B4F461]"
+          id="history-section-show"
+        >
+          History
+        </button>
       </div>
     </header>
     <main class="w-full md:w-5/6 lg:w-4/5 mx-auto px-10 my-16">
-      <div class="donate-section">
+      <div class="donate-section" id="donate-section-container">
         <!-- Card 1 -->
         <div
           class="grid grid-cols-1 justify-items-center lg:grid-cols-2 gap-10 items-center shadow-md border-1 border-gray-100 bg-white shadow-black rounded-2xl p-8"
@@ -80,9 +94,14 @@
               class="flex items-center my-5 bg-[#1111110D] w-72 px-10 py-5 rounded-lg"
             >
               <img src="./assets/coin.png" alt="" />
-              <p class="mx-2 text-xl font-bold">0 BDT</p>
+              <p class="mx-2 text-xl font-bold">
+                <span id="noakhali-donation-amount">0</span> BDT
+              </p>
             </div>
-            <h2 class="text-xl md:text-2xl font-extrabold my-5">
+            <h2
+              class="text-xl md:text-2xl font-extrabold my-5"
+              id="noakhali-donation-title"
+            >
               Donate for Flood at Noakhali,Bangladesh
             </h2>
             <p class="text-[#111111B3] font-thin text-sm md:text-xl my-5">
@@ -94,8 +113,8 @@
               lives of those in need.
             </p>
             <input
+              id="donate-for-noakhali"
               type="text"
-              id=""
               placeholder="Write Donation Amount"
               class="block my-5 bg-[#bdbbbb3f] w-full px-2 py-2 border border-gray-300 rounded-lg"
             />
@@ -103,7 +122,7 @@
             <div>
               <button
                 class="btn bg-[#B4F461] w-full"
-                onclick="document.getElementById('my_modal_1').showModal()"
+                id="donate-for-noakhali-btn"
               >
                 Donate Now
               </button>
@@ -122,7 +141,7 @@
                   <h3 class="text-lg font-bold">Successfully</h3>
                   <div class="modal-action">
                     <form method="dialog" class="text-center">
-                      <button class="btn">Close</button>
+                      <button class="btn">Close Confirmation</button>
                     </form>
                   </div>
                 </div>
@@ -142,9 +161,14 @@
               class="flex items-center my-5 bg-[#1111110D] w-72 px-10 py-5 rounded-lg"
             >
               <img src="./assets/coin.png" alt="" />
-              <p class="mx-2 text-xl font-bold">600 BDT</p>
+              <p class="mx-2 text-xl font-bold">
+                <span id="feni-donation-amount">600</span> BDT
+              </p>
             </div>
-            <h2 class="text-xl md:text-2xl font-extrabold my-5">
+            <h2
+              class="text-xl md:text-2xl font-extrabold my-5"
+              id="feni-donation-title"
+            >
               Donate for Flood Relief in Feni,Bangladesh
             </h2>
             <p class="text-[#111111B3] font-thin text-sm md:text-xl my-5">
@@ -159,15 +183,12 @@
             </p>
             <input
               type="text"
-              id=""
+              id="donate-for-feni"
               placeholder="Write Donation Amount"
               class="block my-5 bg-[#bdbbbb3f] w-full px-2 py-2 border border-gray-300 rounded-lg"
             />
             <div>
-              <button
-                class="btn bg-[#B4F461] w-full"
-                onclick="document.getElementById('my_modal_2').showModal()"
-              >
+              <button class="btn bg-[#B4F461] w-full" id="donate-for-feni-btn">
                 Donate Now
               </button>
               <dialog
@@ -185,7 +206,7 @@
                   <h3 class="text-lg font-bold">Successfully</h3>
                   <div class="modal-action">
                     <form method="dialog" class="text-center">
-                      <button class="btn">Close</button>
+                      <button class="btn">Close Confirmation</button>
                     </form>
                   </div>
                 </div>
@@ -205,9 +226,14 @@
               class="flex items-center my-5 bg-[#1111110D] w-72 px-10 py-5 rounded-lg"
             >
               <img src="./assets/coin.png" alt="" />
-              <p class="mx-2 text-xl font-bold">2400 BDT</p>
+              <p class="mx-2 text-xl font-bold">
+                <span id="quota-donation-amount">2400</span> BDT
+              </p>
             </div>
-            <h2 class="text-xl md:text-2xl font-extrabold my-5">
+            <h2
+              class="text-xl md:text-2xl font-extrabold my-5"
+              id="quota-donation-title"
+            >
               Aid for Injured in the Quota Movement
             </h2>
             <p class="text-[#111111B3] font-thin text-sm md:text-xl my-5">
@@ -223,15 +249,12 @@
             </p>
             <input
               type="text"
-              id=""
+              id="donate-for-quota"
               placeholder="Write Donation Amount"
               class="block my-5 bg-[#bdbbbb3f] w-full px-2 py-2 border border-gray-300 rounded-lg"
             />
             <div>
-              <button
-                class="btn bg-[#B4F461] w-full"
-                onclick="document.getElementById('my_modal_3').showModal()"
-              >
+              <button class="btn bg-[#B4F461] w-full" id="donate-for-quota-btn">
                 Donate Now
               </button>
               <dialog
@@ -249,7 +272,7 @@
                   <h3 class="text-lg font-bold">Successfully</h3>
                   <div class="modal-action">
                     <form method="dialog" class="text-center">
-                      <button class="btn">Close</button>
+                      <button class="btn">Close Confirmation</button>
                     </form>
                   </div>
                 </div>
@@ -259,23 +282,16 @@
         </div>
       </div>
       <!-- History Section  -->
-      <div id="history-section-container">
-        <!-- card 1  -->
-        <div class="shadow-lg p-10 border-1 border-gray-300 rounded-xl">
-          <h1 class="text-xl font-extrabold">
-            96500 Taka is Donated for famine-2024 at Feni, Bangladesh
-          </h1>
-          <p class="text-sm font-semibold">
-            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-          </p>
-        </div>
-      </div>
+      <div class="hidden" id="history-section-div"></div>
     </main>
-    <footer class="h-52 bg-[#F9F7F3]"></footer>
+    <footer class="bg-[#F9F7F3] h-72 relative -bottom-28"></footer>
     <script
       src="https://kit.fontawesome.com/125866ef9a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./JS/utilities.js"></script>
     <script src="./JS/menu.js"></script>
+    <script src="./JS/toggle.js"></script>
+    <script src="./JS/donate.js"></script>
   </body>
 </html>
