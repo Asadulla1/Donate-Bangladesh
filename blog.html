@@ -60,52 +60,150 @@
         </div>
       </nav>
     </header>
-    <main class="md:w-4/5 mx-auto my-20">
+    <main class="w-11/12 md:w-4/5 mx-auto my-20">
       <!-- Accordion section  -->
-       <div >
+      <div>
         <div class="collapse collapse-arrow bg-base-200 my-10">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              1. What is the Document Object Model (DOM)?
-            </div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-extrabold">
+            1. What is the Document Object Model (DOM)?
           </div>
+          <div class="collapse-content">
+            <p class="text-lg my-2 text-black font-medium">
+              When a web page is loaded, the browser creates a Document Object
+              Model of the page.The HTML DOM model is constructed as a tree of
+              Objects
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 my-10">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-extrabold">
+            2. How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p class="text-lg my-2 text-black font-medium">
+              In JavaScript, we can select an element from the DOM (Document
+              Object Model) using various methods provided by the document
+              object.Example given below:
+            </p>
+            <ul class="list-decimal list-inside">
+              <li class="text-lg my-2 ">
+                Selecting by ID: document.getElementById('elementId');
+              </li>
+              <li class="text-lg my-2 ">
+                Selecting by Class Name:
+                document.getElementsByClassName('className');
+              </li>
+              <li class="text-lg my-2 ">
+                Selecting by Tag Name: document.getElementsByTagName('div');
+              </li>
+              <li class="text-lg my-2 ">
+                Selecting by CSS Selector: document.querySelector('.className');
+              </li>
+              <li class="text-lg my-2 ">
+                Selecting Multiple Elements by CSS Selector:
+                document.querySelectorAll('.className');
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="collapse collapse-arrow bg-base-200 my-10">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-extrabold">
+            3. What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p class="text-lg my-2 text-black font-medium">
+              Event delegation in the context of the DOM is a technique where we
+              attach a single event listener to a parent element to manage
+              events triggered by its child elements. Instead of adding event
+              listeners to each individual child element, the parent element
+              listens for events that bubble up from the children.
+            </p>
+            <p class="text-lg my-2 text-black font-medium">
+              Event delegation is useful because it enhances performance by
+              reducing the number of event listeners needed in the DOM—allowing
+              a single listener on a parent element to manage events for all its
+              child elements. This is particularly beneficial in applications
+              with many elements, as it minimizes memory usage and improves
+              efficiency.
+            </p>
+          </div>
+        </div>
+        <div>
           <div class="collapse collapse-arrow bg-base-200 my-10">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              2. How do you select an element from the DOM?
-            </div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200 my-10">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              3. What is event delegation in the context of the DOM, and why is it
-              useful?
-            </div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow bg-base-200 my-10">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-xl font-extrabold">
               4. How do you manipulate an element's attributes and styles using the DOM?
+            </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p class="text-lg my-2 text-black font-medium">
+                We can manipulate an element's attributes and styles using various methods in the DOM.
+              </p>
+              <ul class="list-disc p-4">
+                <li class="list-[square] my-3">Attribute Manipulation:</li>
+                <li>
+                  Get an Attribute: element.getAttribute('attributeName');
+                </li>
+                <li>
+                  Set an Attribute: element.setAttribute('attributeName', 'newValue');
+                </li>
+                <li>
+                  remove an Attribute: element.removeAttribute('attributeName');
+                </li>
+              </ul>
+              <ul class="list-disc p-4 my-3">
+                <li class="list-[square] my-3">Style Manipulation:</li>
+                <li>Inline Styles: element.style.backgroundColor = 'blue';</li>
+                <li>Adding Classes: element.classList.add('newClass');</li>
+                <li>Removing Classes: element.classList.remove('oldClass');</li>
+              </ul>
             </div>
           </div>
-       </div>
+      </div>
     </main>
     <footer class="h-60 bg-[#F9F7F3]"></footer>
     <script src="./JS/menu.js"></script>
     <script
-    src="https://kit.fontawesome.com/125866ef9a.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/125866ef9a.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+
+
+<!-- <div class="collapse collapse-arrow bg-base-200 my-10">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-extrabold ">
+    2. How do you select an element from the DOM?
+  </div>
+  <div class="collapse-content">
+    <p class="text-lg my-2 text-black font-medium">
+      In JavaScript, we can select an element from the DOM (Document
+      Object Model) using various methods provided by the document
+      object.Example given below:
+    </p>
+    <ul class="list-decimal px-4">
+      <li class="text-lg my-2">
+        Selecting by ID: document.getElementById('elementId');
+      </li>
+      <li class="text-lg my-2">
+        Selecting by Class Name:
+        document.getElementsByClassName('className');
+      </li>
+      <li class="text-lg my-2">
+        Selecting by Tag Name: document.getElementsByTagName('div');
+      </li>
+      <li class="text-lg my-2">
+        Selecting by CSS Selector: document.querySelector('.className');
+      </li>
+      <li class="text-lg my-2">
+        Selecting Multiple Elements by CSS Selector:
+        document.querySelectorAll('.className');
+      </li>
+    </ul>
+  </div>
+</div> -->
