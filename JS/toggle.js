@@ -1,6 +1,8 @@
 document
   .getElementById("history-section-show")
   .addEventListener("click", () => {
+    const donationBtn = document.getElementById("donation-section-show");
+    donationBtn.classList.remove("bg-[#B4F461]");
     const historySectionContainer = document.getElementById(
       "history-section-div"
     );
