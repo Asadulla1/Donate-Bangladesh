@@ -48,6 +48,8 @@ function makeTransactionHistory(donationAmount, donationTitle) {
   const transactionHistoryContainer = document.getElementById(
     "history-section-div"
   );
+  const transactionTitle = document.getElementById("transaction-id");
+  transactionTitle.classList.add("hidden");
   const div = document.createElement("div");
   const date = new Date();
   const heading = document.getElementById(donationTitle).innerText;
@@ -60,7 +62,7 @@ function makeTransactionHistory(donationAmount, donationTitle) {
  ${donationAmount} Taka is Donated for ${filteredArr}
   </h1>
   <p class="text-sm font-semibold">
-  ${date}
+  Date: ${date}
   </p>
   `;
   div.classList.add(
